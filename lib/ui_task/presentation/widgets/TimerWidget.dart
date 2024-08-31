@@ -5,9 +5,7 @@ class TimerWidget extends StatelessWidget {
   const TimerWidget({
     super.key,
   });
-  static final  String days= '02';
-  static final String months = '09';
-  static final String years = '24';
+  
   static final String Discount = '20';
 
   @override
