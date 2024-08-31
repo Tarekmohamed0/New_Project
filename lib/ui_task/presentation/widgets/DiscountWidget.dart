@@ -8,7 +8,7 @@ class DiscountWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(9.0),
       child: Container(
         padding: const EdgeInsets.all(20),
         height: 130,
@@ -39,7 +39,7 @@ class DiscountWidget extends StatelessWidget {
                       ),
                     ),
 
-                    const Icon(Icons.access_time_rounded, color: Colors.red,size: 32,),
+                    const Icon(Icons.access_time_rounded, color: Colors.red,size: 30,),
                   ],
                 ),
                 const Text('.العرض الخاص بك شارف علي الانتهاء',
