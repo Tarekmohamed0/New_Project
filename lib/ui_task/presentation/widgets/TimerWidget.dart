@@ -5,7 +5,7 @@ class TimerWidget extends StatelessWidget {
   const TimerWidget({
     super.key,
   });
-  
+
   static final String Discount = '20';
 
   @override
