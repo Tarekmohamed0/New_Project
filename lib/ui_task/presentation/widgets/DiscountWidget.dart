@@ -5,7 +5,6 @@ class DiscountWidget extends StatelessWidget {
   const DiscountWidget({
     super.key,
   });
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -30,7 +29,7 @@ class DiscountWidget extends StatelessWidget {
                   children: [
 
                     Padding(
-                      padding: const EdgeInsets.only(right: 10),
+                      padding: const EdgeInsets.only(right: 11),
                       child: const Text('#CODE11',
                         style: TextStyle(
                           fontSize: 20,
