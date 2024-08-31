@@ -8,6 +8,7 @@ import '../widgets/SearchBar.dart';
 
 import '../widgets/TimerWidget.dart';
 import '../widgets/app_bar.dart';
+import '../widgets/timer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:new_project/ui_task/presentation/widgets/timer.dart';
+import 'package:slide_countdown/slide_countdown.dart';
 class TimerWidget extends StatelessWidget {
   const TimerWidget({
     super.key,
@@ -48,92 +49,8 @@ class TimerWidget extends StatelessWidget {
                 height: 10,
               ),
               Row(
-
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(right: 3),
-                    child: Container(
-                      height: 30,
-                      width: 30,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child:Center(child:  Text('${days}')),
-                    ),
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        height: 3,
-                        width: 3,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 3),
-                        child: Container(
-                          height: 3,
-                          width: 3,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(100),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 3,right: 3),
-                    child: Container(
-                      height: 30,
-                      width: 30,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child:Center(child:  Text('${months}')),
-                    ),
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        height: 3,
-                        width: 3,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 3),
-                        child: Container(
-                          height: 3,
-                          width: 3,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(100),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 3,right: 3),
-                    child: Container(
-                      height: 30,
-                      width: 30,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child:Center(child:  Text('${years}')),
-                    ),
-                  ),
-
+                  counter(),
                 ],
               ),
             ],

@@ -52,6 +52,7 @@ dependencies:
   retrofit_generator: ^8.2.0
   flutter_screenutil: ^5.9.3
   audioplayers: ^6.1.0
+  slide_countdown: ^1.6.1
 
 
 dev_dependencies:
