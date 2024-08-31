@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:new_project/ui_task/presentation/widgets/itemsContainer.dart';
+import '../../data/local/models/items.dart';
 import '../widgets/CategoriesWidget.dart';
 import '../widgets/DiscountWidget.dart';
 import '../widgets/DotsWidget.dart';
@@ -32,7 +34,15 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            TimerWidget(),
+                SizedBox(
+                  width: double.infinity,
+                  height: MediaQuery.of(context).size.height /4,
+                  child: PageView.builder(
+                      itemCount: items.length,
+                      itemBuilder: (context, index) {
+                    return TimerWidget();
+                  }),
+                ),
             SizedBox(
               height: 10,
             ),
