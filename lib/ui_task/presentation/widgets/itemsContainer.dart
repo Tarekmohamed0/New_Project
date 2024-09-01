@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../data/local/models/items.dart';
+import '../pages/items_screen.dart';
 
 class itemsContainer extends StatelessWidget {
   const itemsContainer({super.key});
@@ -9,46 +10,52 @@ class itemsContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
-      child: Container(
-          height: 200,
-          width: 150,
-          decoration: BoxDecoration(
-            color: Colors.grey[800],
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Stack(
-            children: <Widget>[
-              Container(
+      child: GestureDetector(
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => itemScreen()));
+          
+        },
+        child: Container(
+            height: 200,
+            width: 150,
+            decoration: BoxDecoration(
+              color: Colors.grey[800],
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Stack(
+              children: <Widget>[
+                Container(
 
-                height: 100,
-                width: 150,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
+                  height: 100,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
 
-                    image: AssetImage(items[indexx].image),
-                    fit: BoxFit.cover,
-                  ),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Positioned(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(items[indexx].name,
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-
-                        ),
-                      )],
+                      image: AssetImage(items[indexx].image),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                 ),
-              )],
-          )
+                Positioned(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(items[indexx].name,
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+
+                          ),
+                        )],
+                    ),
+                  ),
+                )],
+            )
+        ),
       ),
     );
   }

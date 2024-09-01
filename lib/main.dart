@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:new_project/ui_task/presentation/pages/home_screen.dart';
+import 'package:new_project/ui_task/presentation/pages/items_screen.dart';
 
 
 void main() {
